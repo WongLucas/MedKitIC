@@ -1,0 +1,43 @@
+@layout('layout/app')
+
+@section('content')
+
+  <section>
+
+
+    <h1>MEDKIT - Query</h1>
+    <div>
+      <form action= method="post">
+        <div>
+            <input type="text" name="MED" placeholder="NOME PRODUTO"/>
+        </div>
+        {{--  AJEITAR  --}}
+        <div>
+            <select name="CATEGORIA" id="">
+              <option value="0">NOVO</option>
+              <option value="1">SIMILAR</option>
+              <option value="2">ESPECÍFICO</option>
+              <option value="3">FITOTERÁPICO</option>
+              <option value="4">BIOLÓGICO</option>
+              <option value="5">GENÉRICO</option>
+            </select>
+        </div>
+
+        {{--  AJEITAR  --}}
+        <div>
+            <input type="text" name="password" id="ct" placeholder="CLASSE TERAPÊUTICA">
+        </div>
+        {{--  AJEITAR  --}}
+        <div>
+          <input type="text" name="pa" id="pa" placeholder="PRINCIPIO ATIVO">
+        </div>
+
+        <div>
+          <input type="submit" value="Buscar">
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  @endsection

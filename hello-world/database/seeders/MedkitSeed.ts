@@ -1,6 +1,6 @@
 import BaseSeeder from '@ioc:Adonis/Lucid/Seeder'
 import Medkit from 'App/Models/Medkit'
-import { readFile, writeFile } from 'fs/promises'
+import { readFile } from 'fs/promises'
 
 export default class extends BaseSeeder {
   public async run() {
