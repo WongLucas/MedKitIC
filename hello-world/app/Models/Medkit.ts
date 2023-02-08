@@ -28,8 +28,6 @@ export default class Medkit extends BaseModel {
   @column()
   public PRINCIPIO_ATIVO: string
 
-
-
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 
